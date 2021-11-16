@@ -4,31 +4,32 @@ export const book = {
 };
 
 export function getItemDescription(book) {
-  return `TODO`;
+  const {name,price}= book;
+  return `The book is called ${name} and it costs CHF ${price}.`;
 }
 
 // -------------
 
 const numbers = [1, 2];
-export let one;
-export let two;
+export const [one, two]= numbers;
 
 // -------------
 
 const characters = ['a', 'b', 'c', 'd', 'e'];
-export let a;
-export let others;
+export const [a , ...others]= characters;
+// ... to assign the rest
 
 // -------------
 
-export let numbersAndCharacters;
+export const numbersAndCharacters =[...numbers, ...characters]; 
+//  we can also use concat but spread operater allows u to add element in array
 
 // -------------
 
 export const wordsArray = ['hello', 'javascript'];
 export function wordsToUpperCase(words) {
-  return 'TODO';
-}
+return words.maps(word => word.toUpperCase())
+};
 
 // -------------
 
@@ -64,9 +65,11 @@ export const books = [
 ];
 
 export function getLargeBooks(books) {
-  return 'TODO';
+  return books.filter(book => { 
+     book.pages >= 500;
+  });
 }
 
 // -------------
 
-export const sum = () => 'TODO';
+export const sum = (a, b = 10) => a+b;

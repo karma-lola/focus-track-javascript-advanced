@@ -14,5 +14,10 @@
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
-  }
+  },
+  "description": "- Navigate into this folder\r - Install all dependencies with `npm install`\r - Solve the exercises in `exercise.js`\r - Check the solutions by running `npm run test`\r - The solutions are in the file `solutions.js`. Take a look at them when you need a hint, but first try to solve them on your own, with the repetition videos and Google.\r - When you solved all exercises, compare it with the solutions.",
+  "main": "exercise.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
