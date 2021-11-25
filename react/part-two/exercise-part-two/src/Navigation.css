@@ -1,0 +1,13 @@
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #c45f5f;  
+}
+
+.navbar {
+    color:white;
+    padding:1rem;
+    font-size: 1em;
+    text-decoration: none;
+}
