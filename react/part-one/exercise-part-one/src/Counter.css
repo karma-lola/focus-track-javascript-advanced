@@ -1,0 +1,13 @@
+.counter_yellow {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  text-align: center;
+  align-content: center;
+  margin-left: 1em;
+  font-size: 2em;
+}
+.counter-red {
+  color: red;
+}
